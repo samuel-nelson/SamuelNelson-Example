@@ -7,11 +7,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Grandma Sarah Sews</title>
 
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 		<!-- CSS stylesheet -->
 		<link rel="stylesheet" href="style.css">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+				integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 		<!-- Parallax -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -20,6 +21,12 @@
 
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+
+
+		<!-- JS -->
+		<script src="script.js"></script>
+
+
 
 	</head>
 	<body>
@@ -39,6 +46,7 @@
 				<div class="navbar-nav ml-auto">
 					<a class="nav-item nav-link" href="#">About <span class="sr-only">(current)</span></a>
 					<a class="nav-item nav-link" href="#">Products</a>
+					<a class="nav-item nav-link" href="#">Newsletter</a>
 					<a class="nav-item nav-link" href="#">Contact Me</a>
 				</div>
 			</div>
@@ -52,8 +60,8 @@
 				<div class="card-img-overlay" id="titleText">
 					<br/>
 					<div class="header-text">
-					<h1 class="card-title text-center" id="title">Grandma Sarah Sews</h1>
-					<p class="card-text text-center">A Grandmother's love is in every stitch.</p>
+						<h1 class="card-title text-center" id="title">Grandma Sarah Sews</h1>
+						<p class="card-text text-center">A Grandmother's love is in every stitch.</p>
 					</div>
 				</div>
 			</div>
@@ -70,7 +78,10 @@
 								<img class="rounded-circle" src="../assets/1.jpeg" alt="proper tag">
 								<br/>
 								<br/>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia sagittis nisl ac finibus. Praesent pretium dui ac lectus faucibus gravida. Donec consequat ligula non dictum hendrerit. Duis interdum auctor nunc, ac porta massa malesuada et. Phasellus nunc diam, auctor nec sem non, hendrerit blandit neque.</p>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
+									sagittis nisl ac finibus. Praesent pretium dui ac lectus faucibus gravida. Donec consequat
+									ligula non dictum hendrerit. Duis interdum auctor nunc, ac porta massa malesuada et.
+									Phasellus nunc diam, auctor nec sem non, hendrerit blandit neque.</p>
 							</div>
 						</div>
 					</div>
@@ -79,9 +90,12 @@
 						<div class="mb-4">
 							<div class="card-body">
 								<img class="rounded-circle" src="../assets/2.jpeg" alt="proper tag">
-									<br/>
-									<br/>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia sagittis nisl ac finibus. Praesent pretium dui ac lectus faucibus gravida. Donec consequat ligula non dictum hendrerit. Duis interdum auctor nunc, ac porta massa malesuada et. Phasellus nunc</p>
+								<br/>
+								<br/>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
+									sagittis nisl ac finibus. Praesent pretium dui ac lectus faucibus gravida. Donec consequat
+									ligula non dictum hendrerit. Duis interdum auctor nunc, ac porta massa malesuada et.
+									Phasellus nunc</p>
 							</div>
 						</div>
 					</div>
@@ -92,7 +106,10 @@
 								<img class="rounded-circle" src="../assets/3.jpeg" alt="proper tag">
 								<br/>
 								<br/>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia sagittis nisl ac finibus. Praesent pretium dui ac lectus faucibus gravida. Donec consequat ligula non dictum hendrerit. Duis interdum auctor nunc, ac porta massa malesuada et. Phasellus nunc</p>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
+									sagittis nisl ac finibus. Praesent pretium dui ac lectus faucibus gravida. Donec consequat
+									ligula non dictum hendrerit. Duis interdum auctor nunc, ac porta massa malesuada et.
+									Phasellus nunc</p>
 							</div>
 						</div>
 					</div>
@@ -104,23 +121,65 @@
 		<div class="parallax-container" data-parallax="scroll" data-bleed="20" data-speed="0.2"
 			  data-image-src="../assets/yawn.jpg" data-natural-width="1920" data-natural-height="1280" id="titleBackground"
 			  style="height: 650px;">
-			<div class="card bg-dark text-white text-border-dark border-0">
-				<div class="card-img-overlay" id="titleText">
+			<div class="card-body d-flex justify-content-center text-light" id="subscribe-text">
+				<p class="card-text">Subscribe to our newsletter and receive emails with daily deals!</p>
+			</div>
+			<div class="card-body d-flex justify-content-center">
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-light" data-toggle="modal" data-target="#siteModal">
+							Subscribe!
+						</button>
+			</div>
+					</div>
+			</div>
+		</div>
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="siteModal" tabindex="-1" role="dialog" aria-labelledby="Modal"
+			  aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="Modal">You opened the modal!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>Thanks for checking out the example website!</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
 				</div>
 			</div>
 		</div>
+
+
+
 		<!-- Footer -->
-		<footer class="bg-light bg-text text-dark text-center py-4">
-			<div class="container">
-				<small>This is the footer</small>
+		<footer class="bg-light bg-text text-dark text-center py-4" id="icons">
+			<div class="container" id="icon">
+				<a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+				<a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+				<a href="#"><i class="fab fa-pinterest-square fa-3x"></i></a>
+				<a href="#"><i class="fab fa-instagram fa-3x"></i></a>
 			</div>
 		</footer>
 
 
-
 		<!-- Bootstrap JS-->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+				  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+				  crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+				  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+				  crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+				  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+				  crossorigin="anonymous"></script>
+		<!-- FA JS -->
+		<script src="https://kit.fontawesome.com/ec1780ac64.js"></script>
 	</body>
 </html>
