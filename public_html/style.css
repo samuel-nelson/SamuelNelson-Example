@@ -6,3 +6,12 @@
 #subscribe-text {
 	font-size: 2rem;
 }
+
+img.rounded-circle {
+	opacity: 1;
+}
+img.rounded-circle:hover {
+	opacity: 0.5;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
